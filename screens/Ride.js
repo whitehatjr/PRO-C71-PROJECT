@@ -51,7 +51,7 @@ export default class RideScreen extends Component {
 
   handleTransaction = () => {
     var { bikeId } = this.state;
-    db.collection("bicyles")
+    db.collection("bicycles")
       .doc(bikeId)
       .get()
       .then(doc => {
